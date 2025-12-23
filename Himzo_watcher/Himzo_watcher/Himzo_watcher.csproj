@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework> 
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <ClickOnceSecuritySettings>false</ClickOnceSecuritySettings>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    
+    <ApplicationIcon>legfontosabb_macska.ico</ApplicationIcon> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="app.manifest" />
+    <Content Include="legfontosabb_macska.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpPcap" Version="6.3.0" />
+  </ItemGroup>
+
+</Project>
