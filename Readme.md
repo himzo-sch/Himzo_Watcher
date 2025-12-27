@@ -23,7 +23,7 @@
 	5. Actions:
 		1. Press new..
 		2. Action: Start a program
-		3. Program/script: paste the path of HimzoWatcher.exe
+		3. Program/script: paste the path of HimzoWatcher.exe (example: "C:\Users\Himzo\Himzo_watcher\Himzo_watcher\Himzo_watcher\bin\Release\net8.0\Himzo_watcher.exe")
 		4. Press ok
 	6. Conditions:
 		1. Untick start the task only if the computere is on AC power
@@ -31,7 +31,7 @@
 		1. Untick Stop the task if it runs longer than: ...
 		2. Untick If the running task does not end when requested, force it to stop
 	8. Press ok
-8. Added a new task for startup for the HappyLan:
+8. Added a new task for startup for the HappyLock:
 	1. Create Task
 	2. General:
 		1. Name: HappyLanGUI
@@ -46,7 +46,7 @@
 	4. Actions:
 		1. Press new..
 		2. Action: Start a program
-		3. Program/script: paste the path of happylan.exe
+		3. Program/script: paste the path of HappyLock.exe (example: "C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Release\HappyLock.exe")
 		4. Press ok
 	5. Conditions:
 		1. Untick start the task only if the computere is on AC power

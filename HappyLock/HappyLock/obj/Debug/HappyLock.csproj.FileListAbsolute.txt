@@ -1,0 +1,11 @@
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.csproj.AssemblyReference.cache
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.csproj.CoreCompileInputs.cache
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\bin\Debug\HappyLock.exe.config
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\bin\Debug\HappyLock.exe
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\bin\Debug\HappyLock.pdb
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.exe
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.pdb
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\bin\Debug\HappyLock.exe.manifest
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\bin\Debug\HappyLock.application
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.exe.manifest
+C:\Users\Himzo\Himzo_watcher\HappyLock\HappyLock\obj\Debug\HappyLock.application
