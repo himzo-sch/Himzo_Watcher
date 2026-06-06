@@ -138,6 +138,18 @@ namespace HappyLock
                 Process p = Process.GetProcessById((int)pid);
                 if (p.ProcessName.Equals(TargetProcessName, StringComparison.OrdinalIgnoreCase))
                 {
+                    // Only enforce on the process' main window. If the clicked window
+                    // is a child or secondary dialog, allow the close action.
+                    try
+                    {
+                        IntPtr topLevel = GetAncestor(hWnd, GA_ROOT);
+                        if (topLevel != p.MainWindowHandle)
+                        {
+                            return false;
+                        }
+                    }
+                    catch { /* fall through to original checks if anything fails */ }
+
                     // Check 1: System HitTest
                     int hitTest = SendMessage(hWnd, 0x0084, IntPtr.Zero, MakeLParam(mouseX, mouseY));
                     if (hitTest == 20) return true;
@@ -185,6 +197,8 @@ namespace HappyLock
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)] private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
         [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)] private static extern IntPtr GetModuleHandle(string lpModuleName);
         [DllImport("user32.dll")] static extern IntPtr WindowFromPoint(Point Point);
+        [DllImport("user32.dll")] static extern IntPtr GetAncestor(IntPtr hWnd, uint gaFlags);
+        const uint GA_ROOT = 2;
         [DllImport("user32.dll")] static extern int SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, int lParam);
         [DllImport("user32.dll")] static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
         [DllImport("user32.dll")] static extern bool SetProcessDPIAware();
